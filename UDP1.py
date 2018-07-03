@@ -1,5 +1,5 @@
 import argparse, socket
-from datetime import import datetime
+from datetime import datetime
 
 MAX_BYTES = 65535
 

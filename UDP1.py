@@ -28,7 +28,7 @@ def client(port):
 if __name__ == '__main__':
     choices = {'client': client, 'server' : server}
     parser = argparse.ArgumentParser(description= 'Send and receive UDP locally')
-    parser.add_argument('role',choices= choices,help 'Which role to play')
+    parser.add_argument('role',choices= choices,help =  'Which role to play')
     parser.add_argument('-p', metavar = 'PORT', type = int, default = 1060,help = 'UDP port (default 1060')
     args = parser.parse_args()
     function = choices[args.role]
